@@ -82,7 +82,7 @@
 </template>
 
 <script>
-import { Timeline } from "@vue2vis/timeline";
+import { Timeline } from "@recognizerhd/vue2vis-timeline";
 import "vis-timeline/styles/vis-timeline-graph2d.css";
 
 export default {

@@ -1,4 +1,4 @@
-import { DataSet, DataView } from "vis-data/esnext";
+import { DataSet, DataView } from "vis-data/peer";
 
 export const arrayDiff = (arr1, arr2) =>
   arr1.filter(x => arr2.indexOf(x) === -1);

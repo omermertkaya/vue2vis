@@ -1,32 +1,48 @@
-# `@vue2vis/network`
+# `@recognizerhd/vue2vis-network`
 
+> A fork of the <a href="https://www.npmjs.com/package/%40vue2vis%2Fnetwork">alexcode/vue2vis</a> package.
 > Vue2 wrapper for the <a href="https://github.com/visjs/vis-network">Visjs Network</a> library.
 
+<!--<p align="center">-->
+<!--  <a href="https://travis-ci.com/alexcode/vue2vis">-->
+<!--    <img src="https://travis-ci.com/alexcode/vue2vis.svg?branch=master" alt="Build Status" />-->
+<!--  </a>-->
+<!--  <a href="LICENSE">-->
+<!--    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?" alt="Software License" />-->
+<!--  </a>-->
+<!--  <a href="https://badge.fury.io/js/%40vue2vis%2Fnetwork">-->
+<!--    <img src="https://badge.fury.io/js/%40vue2vis%2Fnetwork.svg" alt="npm version" height="18">-->
+<!--  </a>-->
+<!--  <a href="https://github.com/alexcode/vue2vis/issues">-->
+<!--    <img src="https://img.shields.io/github/issues/alexcode/vue2vis.svg?" alt="Issues" />-->
+<!--  </a>-->
+<!--</p>-->
+
 <p align="center">
-  <a href="https://travis-ci.com/alexcode/vue2vis">
-    <img src="https://travis-ci.com/alexcode/vue2vis.svg?branch=master" alt="Build Status" />
-  </a>
+<!--  <a href="https://travis-ci.com/alexcode/vue2vis">-->
+<!--    <img src="https://travis-ci.com/alexcode/vue2vis.svg?branch=master" alt="Build Status" />-->
+<!--  </a>-->
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?" alt="Software License" />
   </a>
-  <a href="https://badge.fury.io/js/%40vue2vis%2Fnetwork">
-    <img src="https://badge.fury.io/js/%40vue2vis%2Fnetwork.svg" alt="npm version" height="18">
+  <a href="https://badge.fury.io/js/%40recognizerhd%2Fvue2vis-network">
+    <img src="https://badge.fury.io/js/%40recognizerhd%2Fvue2vis-network.svg" alt="npm version" height="18">
   </a>
-  <a href="https://github.com/alexcode/vue2vis/issues">
-    <img src="https://img.shields.io/github/issues/alexcode/vue2vis.svg?" alt="Issues" />
+  <a href="https://github.com/recognizerhd/vue2vis/issues">
+    <img src="https://img.shields.io/github/issues/recognizerhd/vue2vis.svg?" alt="Issues" />
   </a>
 </p>
 
 ### Installation
 
 ```
-npm install --save @vue2vis/network vis-data moment
+npm install --save @recognizerhd/vue2vis-network vis-data moment
 ```
 
 or
 
 ```
-yarn add @vue2vis/network vis-data moment
+yarn add @recognizerhd/vue2vis-network vis-data moment
 ```
 
 ## Usage

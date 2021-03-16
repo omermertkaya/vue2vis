@@ -1,45 +1,44 @@
 {
-  "name": "@vue2vis/utils",
-  "version": "1.0.1-alpha.0",
+  "name": "@recognizerhd/vue2vis-utils",
+  "version": "1.0.1-redux-4",
   "description": "Utility functions for the @vue2vis package family.",
-  "author": "Alex Couturon <infocontact.alex@gmail.com>",
-  "homepage": "https://github.com/alexcode/vue2vis#readme",
+  "contributors": [
+    "Alex Couturon <infocontact.alex@gmail.com>",
+    "Paul Warren <paulwarren.php@gmail.com>"
+  ],
+  "homepage": "https://github.com/recognizerHD/vue2vis#readme",
   "license": "MIT",
   "main": "dist/utils.umd.min.js",
   "module": "dist/utils.esm.min.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "prepare": "rollup -c rollup.config.js"
+  },
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexcode/vue2vis.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "prepare": "rollup -c rollup.config.js"
+    "url": "git+https://github.com/recognizerHD/vue2vis.git"
   },
   "bugs": {
-    "url": "https://github.com/alexcode/vue2vis/issues"
+    "url": "https://github.com/recognizerHD/vue2vis/issues"
   },
   "dependencies": {
-    "vis-util": "^4.0.0"
+    "vis-util": "^5.0.2"
   },
   "peerDependencies": {
-    "vis-data": "^6.5.1"
+    "vis-data": "^7.1.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
-    "rollup-plugin-node-externals": "^2.1.5",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup-plugin-node-externals": "^2.2.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
-    "rollup-plugin-terser": "^5.3.0",
-    "uuid": "^7.0.0"
+    "rollup-plugin-terser": "^7.0.2",
+    "uuid": "^8.3.2"
   }
 }

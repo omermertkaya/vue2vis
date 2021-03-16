@@ -1,9 +1,12 @@
 {
-  "name": "@vue2vis/timeline",
-  "version": "1.0.1-alpha.0",
+  "name": "@recognizerhd/vue2vis-timeline",
+  "version": "1.0.1-redux-6",
   "description": "Vue2 wrapper for the Visjs Timeline library.",
-  "author": "Alex Couturon <infocontact.alex@gmail.com>",
-  "homepage": "https://github.com/alexcode/vue2vis#readme",
+  "contributors": [
+    "Alex Couturon <infocontact.alex@gmail.com>",
+    "Paul Warren <paulwarren.php@gmail.com>"
+  ],
+  "homepage": "https://github.com/recognizerHD/vue2vis#readme",
   "license": "MIT",
   "main": "dist/timeline.umd.min.js",
   "module": "dist/timeline.esm.min.js",
@@ -16,10 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexcode/vue2vis.git"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "git+https://github.com/recognizerHD/vue2vis.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -27,7 +27,7 @@
     "prepare": "rollup -c rollup.config.js"
   },
   "bugs": {
-    "url": "https://github.com/alexcode/vue2vis/issues"
+    "url": "https://github.com/recognizerHD/vue2vis/issues"
   },
   "keywords": [
     "vis",
@@ -37,24 +37,24 @@
     "timeline"
   ],
   "dependencies": {
-    "@vue2vis/utils": "^1.0.1-alpha.0",
-    "vis-timeline": "^7.3.4",
-    "vis-util": "^4.0.0"
+    "@recognizerhd/vue2vis-utils": "1.0.1-redux-4",
+    "vis-timeline": "^7.4.6",
+    "vis-util": "^5.0.2"
   },
   "peerDependencies": {
-    "moment": "^2.24.0",
-    "vis-data": "^6.5.1"
+    "moment": "^2.29.1",
+    "vis-data": "^7.1.2"
   },
   "devDependencies": {
-    "@egjs/hammerjs": "^2.0.0",
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@egjs/hammerjs": "^2.0.17",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
     "component-emitter": "^1.3.0",
-    "keycharm": "^0.3.0",
-    "propagating-hammerjs": "^1.4.0",
-    "rollup-plugin-node-externals": "^2.1.5",
+    "keycharm": "^0.4.0",
+    "propagating-hammerjs": "^2.0.1",
+    "rollup-plugin-node-externals": "^2.2.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
-    "rollup-plugin-terser": "^5.3.0",
-    "uuid": "^7.0.0"
+    "rollup-plugin-terser": "^7.0.2",
+    "uuid": "^7.0.3"
   }
 }

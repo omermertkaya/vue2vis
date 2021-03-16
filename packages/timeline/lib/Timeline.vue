@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import { DataSet, DataView } from "vis-data/esnext";
-import { Timeline } from "vis-timeline/esnext";
-import { mountVisData, translateEvent } from "@vue2vis/utils";
+import { DataSet, DataView } from "vis-data/peer";
+import { Timeline } from "vis-timeline/peer";
+import { mountVisData, translateEvent } from "@recognizerhd/vue2vis-utils";
 
 export default {
   name: "timeline",

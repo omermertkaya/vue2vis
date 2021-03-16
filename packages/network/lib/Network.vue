@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import { DataSet, DataView } from "vis-data/esnext";
-import { Network } from "vis-network/esnext";
+import { DataSet, DataView } from "vis-data/peer";
+import { Network } from "vis-network/peer";
 import { mountVisData, translateEvent } from "@vue2vis/utils";
 
 export default {
