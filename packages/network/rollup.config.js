@@ -12,7 +12,7 @@ export default [
       {
         format: "esm",
         sourcemap: true,
-        file: "dist/network.esm.min.js"
+        file: "dist/network.esm.min.js",
       },
       {
         name: "vis",
@@ -20,32 +20,32 @@ export default [
         exports: "named",
         sourcemap: true,
         format: "umd",
-        file: "dist/network.umd.min.js"
-      }
+        file: "dist/network.umd.min.js",
+      },
     ],
     plugins: [
+      vue(),
       externals({
         exclude: [
           "component-emitter",
           "timsort",
           "@egjs/hammerjs",
           "keycharm",
-          "uuid"
-        ]
+          "uuid",
+        ],
       }),
       nodePolyfills(),
       resolve({ browser: true }),
       commonjs({
         namedExports: {
-          timsort: ["sort"]
-        }
+          timsort: ["sort"],
+        },
       }),
       terser({
         output: {
-          comments: "some"
-        }
+          comments: "some",
+        },
       }),
-      vue()
-    ]
-  }
+    ],
+  },
 ];

@@ -12,7 +12,7 @@ export default [
       {
         format: "esm",
         sourcemap: true,
-        file: "dist/graph2d.esm.min.js"
+        file: "dist/graph2d.esm.min.js",
       },
       {
         name: "vis",
@@ -20,32 +20,32 @@ export default [
         exports: "named",
         sourcemap: true,
         format: "umd",
-        file: "dist/graph2d.umd.min.js"
-      }
+        file: "dist/graph2d.umd.min.js",
+      },
     ],
     plugins: [
+      vue(),
       externals({
         exclude: [
           "component-emitter",
           "propagating-hammerjs",
           "@egjs/hammerjs",
           "keycharm",
-          "uuid"
-        ]
+          "uuid",
+        ],
       }),
       nodePolyfills(),
       resolve({ browser: true }),
       commonjs({
         namedExports: {
-          uuid: ["v4"]
-        }
+          uuid: ["v4"],
+        },
       }),
       terser({
         output: {
-          comments: "some"
-        }
+          comments: "some",
+        },
       }),
-      vue()
-    ]
-  }
+    ],
+  },
 ];

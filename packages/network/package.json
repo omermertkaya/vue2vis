@@ -1,6 +1,6 @@
 {
   "name": "@recognizerhd/vue2vis-network",
-  "version": "1.0.1-redux-5",
+  "version": "1.0.2",
   "description": "Vue2 wrapper for the Visjs Network library.",
   "contributors": [
     "Alex Couturon <infocontact.alex@gmail.com>",
@@ -30,8 +30,8 @@
     "url": "https://github.com/recognizerHD/vue2vis/issues"
   },
   "dependencies": {
-    "@recognizerhd/vue2vis-utils": "1.0.1-redux-4",
-    "vis-network": "^9.0.3",
+    "@recognizerhd/vue2vis-utils": "1.0.3",
+    "vis-network": "^9.0.4",
     "vis-util": "^5.0.2"
   },
   "peerDependencies": {
@@ -40,14 +40,14 @@
   },
   "devDependencies": {
     "@egjs/hammerjs": "^2.0.17",
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "component-emitter": "^1.3.0",
     "keycharm": "^0.4.0",
     "rollup-plugin-node-externals": "^2.2.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
     "rollup-plugin-terser": "^7.0.2",
     "timsort": "^0.3.0",
-    "uuid": "^7.0.0"
+    "uuid": "^8.3.2"
   }
 }

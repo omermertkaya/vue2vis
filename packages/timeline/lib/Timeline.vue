@@ -11,11 +11,11 @@ export default {
   name: "timeline",
   props: {
     groups: {
-      type: [Array, DataSet, DataView]
+      type: [Array, DataSet, DataView],
     },
     items: {
       type: [Array, DataSet, DataView],
-      default: () => []
+      default: () => [],
     },
     events: {
       type: Array,
@@ -37,36 +37,36 @@ export default {
         "itemover",
         "itemout",
         "timechange",
-        "timechanged"
-      ]
+        "timechanged",
+      ],
     },
     selection: {
       type: [Array, String],
-      default: () => []
+      default: () => [],
     },
     options: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data: () => ({
     visData: {
       items: null,
-      groups: null
-    }
+      groups: null,
+    },
   }),
   watch: {
     options: {
       deep: true,
       handler(v) {
         this.timeline.setOptions(v);
-      }
+      },
     },
     selection: {
       deep: false,
       handler(v) {
         this.timeline.setSelection(v);
-      }
-    }
+      },
+    },
   },
   methods: {
     addCustomTime(time, id) {
@@ -152,7 +152,7 @@ export default {
     },
     zoomOut(percentage, options, callback) {
       this.timeline.zoomOut(percentage, options, callback);
-    }
+    },
   },
   mounted() {
     this.visData.items = mountVisData(this, "items");
@@ -166,8 +166,8 @@ export default {
       this.options
     );
 
-    this.events.forEach(eventName =>
-      this.timeline.on(eventName, props =>
+    this.events.forEach((eventName) =>
+      this.timeline.on(eventName, (props) =>
         this.$emit(translateEvent(eventName), props)
       )
     );
@@ -179,6 +179,6 @@ export default {
   },
   beforeDestroy() {
     this.timeline.destroy();
-  }
+  },
 };
 </script>

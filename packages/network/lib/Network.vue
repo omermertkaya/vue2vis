@@ -12,11 +12,11 @@ export default {
   props: {
     edges: {
       type: [Array, DataSet, DataView],
-      default: () => []
+      default: () => [],
     },
     nodes: {
       type: [Array, DataSet, DataView],
-      default: () => []
+      default: () => [],
     },
     events: {
       type: Array,
@@ -50,27 +50,27 @@ export default {
         "beforeDrawing",
         "afterDrawing",
         "animationFinished",
-        "configChange"
-      ]
+        "configChange",
+      ],
     },
     options: {
       type: Object,
-      default: () => ({})
-    }
+      default: () => ({}),
+    },
   },
   data: () => ({
     visData: {
       nodes: [],
-      edges: []
-    }
+      edges: [],
+    },
   }),
   watch: {
     options: {
       deep: true,
       handler(o) {
         this.network.setOptions(o);
-      }
-    }
+      },
+    },
   },
   methods: {
     setData(n, e) {
@@ -248,7 +248,7 @@ export default {
     },
     getOptionsFromConfigurator() {
       return this.network.getOptionsFromConfigurator();
-    }
+    },
   },
   created() {
     // This should be a Vue data property, but Vue reactivity kinda bugs Vis.
@@ -264,14 +264,14 @@ export default {
       this.options
     );
 
-    this.events.forEach(eventName =>
-      this.network.on(eventName, props =>
+    this.events.forEach((eventName) =>
+      this.network.on(eventName, (props) =>
         this.$emit(translateEvent(eventName), props)
       )
     );
   },
   beforeDestroy() {
     this.network.destroy();
-  }
+  },
 };
 </script>
